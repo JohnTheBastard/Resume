@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{jhearn-resume}[2018/01/31 CV class]
+\ProvidesClass{jhearn-resume}[2021/10/14 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{
