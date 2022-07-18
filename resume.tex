@@ -8,7 +8,7 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
 
 \documentclass[]{jhearn-resume}
-\usepackage{fancyhdr}
+%\usepackage{fancyhdr}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -27,8 +27,8 @@
 \namesection{John}{Hearn}{ 
 \urlstyle{same}\href{mailto:xxxxxx@gmail.com}{xxxxxx@gmail.com} 
 | xxx.xxx.xxxx \\
-\href{https://www.linkedin.com/in/johndhearn/}{linkedin: johndhearn} |
-\href{http://github.com/johnthebastard}{github: johnthebastard}\\
+linkedin: {\fontspec[Color=blue1]{SF Hello Light}\href{https://www.linkedin.com/in/johndhearn/}{\color{blue1}johndhearn}} |
+github: {\fontspec[Color=blue1]{SF Hello Light}\href{http://github.com/johnthebastard}{\color{blue1}johnthebastard}}\\
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -50,55 +50,42 @@
 
 \section{Recent Work Experience}
 \runsubsection{Principal Software Engineer, Acoustic Tools}
-\descript{ {\href{https://apple.com}{Apple}} }
+\descript{ {\fontspec[Color=blue1]{SF Hello Light}\href{https://apple.com}{\color{blue1}Apple}} }
 \location{2022-Present | Cupertino, CA}
 \runsubsection{Senior Software Engineer, Acoustic Tools}
-\descript{ {\href{https://apple.com}{Apple}} }
+\descript{ {\fontspec[Color=blue1]{SF Hello Light}\href{https://apple.com}{\color{blue1}Apple}} }
 \location{2018-2022 | Cupertino, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item 
-\item 
-\item 
+\item Technical Lead and Hiring Manager for the Acoustic Tools Team
+\item Developed core values and methodologies to deliver high-impact software tools on an aggressive schedule
+\item Responsible for scoping roles, writing job descriptions, recruiting, hiring, and onboarding team members
+\item Oversaw intake of all tool requests: gathering of requirements, impact assessment and prioritization, customer contract, developer assignment, and delivery   
+\item Provided technical direction for over 40 internal software tools. Some examples include:
+	\begin{tightemize}
+	\vspace{\topsep}
+	\item Web-hosted databases for search and visualization of acoustic simulations (Flask, React, PostgreSQL)
+	\item Test automation and acoustic data collection for MacOS and iOS devices (Obj-C, Python, MatLab)
+	\item Telephony field testing (Swift)
+	\item FAI/Cpk visualization and analysis (Swift, Python/Pandas)
+	\item Reliability data filtration and visualization (Swift, Python)
+	\item MUSHRA-like acoustic user response surveys (NodeJS, Angular)
+	\end{tightemize}
+	\vspace{\topsep}
+\item Product manager for \emph{Auditor} and \emph{Labrador} (developed externally by a team of ~20 with the project manager reporting to me)
+	\begin{tightemize}
+	\vspace{\topsep}
+	\item \emph{Labrador} is a warehouse for acoustic factory data. Module and System DRIs create curated data feeds based on product, build, location, vendor, station IDs, and dates. Serial numbers are decoded to associate configs with build matrix information for further analysis.
+	\item \emph{Auditor} is a visualization, analysis, and reporting tool for factory data. Yield tables, frequency response, distortion, box, and histogram plots are created from Labrador data sets. DRIs from Module, System Integration, or N\&V teams can automate repetitive forms of statistical analysis for dash-boarding, or investigate failures based on vendor, config, or build matrix parameters.
+	\item Oversaw migration from a failing monolithic architecture (Java, Spring, JSP) to React SPA front-end and distributed, redundant, scalable microservices backend (Java, Spring, Kubernetes).
+	\item Developed OKRs to drive vendor adoption of TDD, Kanban, CI/CD, and technical debt heat maps
+	\item Achieved minimum of 20x speed improvement for 12 worst performance bottlenecks
+	\item Unit and Integration test coverage increased from 17\% to 83\%
+	\item 80\% reduction of bugs found in production
+	\end{tightemize}
 \end{tightemize}
 \sectionsep
 
-
-
-\runsubsection{\lowercase{i}OS Engineer}
-\descript{ {\href{https://web.archive.org/web/20220115162543/https://tomorrow.me/}{Tomorrow}} }
-\location{2017-2018 | Seattle, WA}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Developed, from infancy to maturity, \href{https://web.archive.org/web/20210728190109/https://tomorrow.me/trust-worthy/tomorrow-news/tomorrow-wins-at-plug-and-play-winter-summit/}{award-winning} financial planning app.
-\item Conceptualized with VP of Product the design of custom UI to collect and present detailed financial information in a way that was easy for users to understand. 
-\item Onboarded and trained new engineers in use of ReSwift and ReactiveSwift to manage app state and asynchronous data flow.
-\item Performed daily code reviews to improve team coding standards and app performance.
-\item Researched and implemented numerous libraries and frameworks for use in app to quickly reach minimum viable product.
-\item Developed a traffic control algorithm to delay UI updates until complete, interdependent data sets had been returned by the API.
-\item Developed and maintained client-side business logic to determine when users had completed legally necessary tasks to generate legal documents, and to guide them through unfinished tasks.
-\item Coded test suite to validate data models and business logic with Quick and Nimble.
-\item Wrote and maintained internal documentation for build pipeline tools, including Carthage, Cocoapods, ReSwift, custom build scripts, BuddyBuild (for continuous integration testing and test build deployment), and iTunesConnect.
-\item Migrated project dependency management from Cocoapods to Carthage to improve Swift build times.
-\end{tightemize}
-\sectionsep
-
-%\section{\lowercase{i}OS Projects}
-%\runsubsection{\lowercase{i}Phone App}
-%\descript{| \textbf{\href{https://github.com/JohnTheBastard/Wikable}{Wikable}} }
-%\location{2017 | Seattle, WA}
-%\begin{tightemize}
-%\item Developed a prototype Wikipedia client in Objective-C using VoiceOver and DynamicText to make content accessible to people with visual impairment.
-%\end{tightemize}
-%\sectionsep
-%
-%\runsubsection{\lowercase{i}Phone App}
-%\descript{| \textbf{\href{https://bit.ly/RouteStats}{RouteStats 1}} }
-%\location{2016 | Seattle, WA}
-%\begin{tightemize}
-%\item Developed a small app to display realtime and aggregate travel statistics using Swift, MapKit, CoreLocation, and CloudKit.
-%\end{tightemize}
-%\sectionsep
 
 \end{minipage} 
 \hfill
@@ -113,6 +100,22 @@
 %  Skills                           %
 % % % % % % % % % % % % % % % % % % %
 \section{Skills}
+
+
+\subsection{Professional}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Strong attention to detail
+\item High ethical standards
+\item User experience focused
+\item Promotes collaboration and inclusion
+\item Communicates technical concepts with simple language
+\item Recognizes and prevents problems early
+\item Creative and resourceful in chaotic \\ environments
+\item Plays the long game
+\end{tightemize}
+\sectionsep
+
 \subsection{Languages}
 \underline{Proficient:} Swift \par
 \underline{A Bit Rusty:} Objective-C, Java, JavaScript, C/C++, PERL, BASH, MySQL, MongoDB, Ruby, {\fontspec{lmroman10-regular.ttf} \LaTeX} \par
@@ -120,33 +123,35 @@
 \sectionsep
 \vspace{-\topsep}
 
-\subsection{Professional}
-{\raggedright - Strong attention to detail\\
-- High ethical standards\\
-- User experience focused\\
-- Promotes collaboration and inclusion\\
-- Communicates technical concepts with simple language\\
-- Recognizes and prevents problems early\\
-- Creative and resourceful in chaotic environments\\
-- Always playing the long game}
-\sectionsep
-
 \subsection{Tools \& Frameworks}
 \raggedright Xcode, ReactiveSwift, ReactiveCocoa, RxSwift, ReSwift, Moya, ObjectMapper, AlamoFire, Nimble/Quick, XCTest, UIKit, CoreData, CloudKit, SpriteKit, MapKit, CoreLocation, Git, BuddyBuild, ParseServer, Carthage, Cocoapods, Node, React, Redux, Express, AWS, Heroku, GoogleAnalytics, Fabric, Flurry, LLDB,  WebPack, Browserfy, Chai, Gulp, JQuery, Subversion, TravisCI, Rails, Selenium, Bugzilla, SocketIO
 \sectionsep
+\section{Education} 
 
-% % % % % % % % % % % % % % % % % % %
-%  Awards                           %
-% % % % % % % % % % % % % % % % % % %
-\section{Awards}
-\subsection{Plug and Play Summit}
-\location{Winter 2017 | Winner}
+\subsection{Harvey Mudd College}
+\location{BS in Mathematics}
+{\footnotesize Spring 2007 | Claremont, CA}
 \sectionsep
 
-\subsection{Tech Crunch Disrupt}
-\location{2017 | Nominee}
+\subsection{University of Waterloo}
+{\small Summer 2005 | Waterloo, ON}\\
+{\footnotesize Courses taken in support of thesis research}
 \sectionsep
 
+\subsection{Big Nerd Ranch}
+{\small Spring 2013 | Banning Mills, GA}\\
+{\footnotesize iOS Essentials with Objective-C}
+\sectionsep
+
+\subsection{Code Fellows}
+{\small Spring 2015 | Portland, OR}\\
+{\footnotesize Advanced Full-Stack Development with JavaScript}
+%\sectionsep
+%
+%\subsection{Code Fellows}
+{\small Winter 2016 | Seattle, WA}\\
+{\footnotesize Advanced iOS Development in Swift \& Objective-C}
+\sectionsep
 \end{minipage} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,6 +164,25 @@
 \vspace{-11pt}
 \noindent\makebox[\linewidth]{\rule{1000pt}{0.4pt}}
 \vspace{-5pt}
+
+\runsubsection{\lowercase{i}OS Engineer}
+\descript{ {\fontspec[Color=blue1]{SF Hello Light}\href{https://web.archive.org/web/20220115162543/https://tomorrow.me/}{\color{blue1}Tomorrow Ideas}} }
+\location{2017-2018 | Seattle, WA}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed, from infancy to maturity, {\fontspec[Color=blue1]{SF Hello Light}\href{https://web.archive.org/web/20210728190109/https://tomorrow.me/trust-worthy/tomorrow-news/tomorrow-wins-at-plug-and-play-winter-summit/}{\color{blue1}award-winning}} financial planning app.
+\item  Conceptualized with VP of Product the design of custom UI to collect and present detailed financial information in a way that was easy for users to understand.
+\item  Onboarded and trained new engineers in use of ReSwift and ReactiveSwift to manage app state and asynchronous data flow.
+\item  Performed daily code reviews to improve team coding standards and app performance.
+\item  Researched and implemented numerous libraries and frameworks for use in app to quickly reach minimum viable product.
+\item  Developed a traffic control algorithm to delay UI updates until complete, interdependent data sets had been returned by the API.
+\item  Developed and maintained client-side business logic to determine when users had completed legally necessary tasks to generate legal documents, and to guide them through unfinished tasks.
+\item  Coded test suite to validate data models and business logic with Quick and Nimble.
+\item  Wrote and maintained internal documentation for build pipeline tools, including Carthage, Cocoapods, ReSwift, custom build scripts, BuddyBuild (for continuous integration testing and test build deployment), and iTunesConnect.
+\item  Migrated project dependency management from Cocoapods to Carthage to improve Swift build times.
+\end{tightemize}
+\sectionsep
+
 
 % % % % % % % % % % % % % % % % % % %
 %  Other Projects & Experience      %
@@ -181,13 +205,13 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Web Game Platform}
-\descript{ Pushes Rocks }
-\location{2016 | Portland, OR}
-\begin{tightemize}
-\item Developed a web platform for mini-games with NodeJS, Express, and OpenShift.
-\end{tightemize}
-\sectionsep
+%\runsubsection{Web Game Platform}
+%\descript{ Pushes Rocks }
+%\location{2016 | Portland, OR}
+%\begin{tightemize}
+%\item Developed a web platform for mini-games with NodeJS, Express, and OpenShift.
+%\end{tightemize}
+%\sectionsep
 
 \runsubsection{Backend Web Development}
 \descript{ John Hearn Consulting }
@@ -205,31 +229,31 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Test Automation}
-\descript{ Carbon Salon}
-\location{2008 - 2010 | Eugene, OR}
-\begin{tightemize}
-\item Implemented and maintained automated unit and integration test suites for Rails apps with Selenium and related tools.
-\end{tightemize}
-\sectionsep
-
+%\runsubsection{Test Automation}
+%\descript{ Carbon Salon}
+%\location{2008 - 2010 | Eugene, OR}
+%\begin{tightemize}
+%\item Implemented and maintained automated unit and integration test suites for Rails apps with Selenium and related tools.
+%\end{tightemize}
+%\sectionsep
+%
 \runsubsection{Engine Development}
 \descript{ {\href{http://www.garagegames.com/products/torque-3d}{GarageGames}} }
 \location{2007 | Eugene, OR}
 \begin{tightemize}
-\item Implemented fixed-function and clip map rendering, Mac platform port of game engine, and legacy code test suite.
+\item Implemented fixed-function and clip map rendering, various bug fixes for MacOS game engine, and legacy code test suite.
 \end{tightemize}
 \sectionsep
-
-\runsubsection{Employee Application Portal}
-\descript{ {\href{https://www.hmc.edu}{Harvey Mudd College}} }
-\location{2006 - 2007 | Claremont, CA}
-\begin{tightemize}
-\item Developed PERL scripts for automated processing of online job applications, including an HTML tokenizer, automation of database tasks, and rendered HTML email forms.
-\item Assisted students and faculty with computer-related difficulties.
-\end{tightemize}
-\sectionsep
-
+%
+%\runsubsection{Employee Application Portal}
+%\descript{ {\href{https://www.hmc.edu}{Harvey Mudd College}} }
+%\location{2006 - 2007 | Claremont, CA}
+%\begin{tightemize}
+%\item Developed PERL scripts for automated processing of online job applications, including an HTML tokenizer, automation of database tasks, and rendered HTML email forms.
+%\item Assisted students and faculty with computer-related difficulties.
+%\end{tightemize}
+%\sectionsep
+%
 \runsubsection{Bugzilla/CVS Integration}
 \descript{ {\href{https://www.parasoft.com}{Parasoft}} }
 \location{ 2006 | Monrovia, CA}
@@ -252,33 +276,21 @@ associate specific CVS revisions of multi-file patches with Bugzilla tickets bas
 %  Education                        %
 % % % % % % % % % % % % % % % % % % %
 \vspace{25pt}
-\section{Education} 
 
-\subsection{Harvey Mudd College}
-\location{BS in Mathematics}
-{\footnotesize Spring 2007 | Claremont, CA}
-\sectionsep
-
-\subsection{University of Waterloo}
-{\small Summer 2005 | Waterloo, ON}\\
-{\footnotesize Courses taken in support of thesis}
-\sectionsep
-
-\subsection{Big Nerd Ranch}
-{\small Spring 2013 | Banning Mills, GA}\\
-{\footnotesize iOS Essentials with Objective-C}
-\sectionsep
-
-\subsection{Code Fellows}
-{\small Spring 2015 | Portland, OR}\\
-{\footnotesize Advanced Full-Stack Development with JavaScript}
-%\sectionsep
-%
-%\subsection{Code Fellows}
-{\small Winter 2016 | Seattle, WA}\\
-{\footnotesize Advanced iOS Development in Swift \& Objective-C}
-\sectionsep
 \vspace{-\topsep}
+
+% % % % % % % % % % % % % % % % % % %
+%  Awards                           %
+% % % % % % % % % % % % % % % % % % %
+\section{Awards}
+\subsection{Plug and Play Summit}
+\location{Winter 2017 | Winner}
+\sectionsep
+
+\subsection{Tech Crunch Disrupt}
+\location{2017 | Nominee}
+\sectionsep
+
 
 % % % % % % % % % % % % % % % % % % %
 %  COURSEWORK                       %
@@ -295,6 +307,13 @@ Combinatorics \\
 Number Theory \\
 Real Analysis I \& II \\
 Abstract Algebra I \& II\\
+Vector Calculus\\
+Discrete Mathematics\\
+Systems Engineering\\
+Engineering Design \& Manufacturing\\
+Linear \& Rotational Mechanics\\
+Special Relativity \& Intro to Quantum Physics\\
+Electricity \& Magnetism\\
 \sectionsep
 \vspace{-\topsep}
 % % % % % % % % % % % % % % % % % % %
@@ -305,16 +324,16 @@ Abstract Algebra I \& II\\
 \descript{ Harvey Mudd College}
 \location{2005 - 2006 | Claremont, CA}
 \small Worked with 
-{\fontspec[Color=blue1]{SF Hello Light}\href{https://www.cs.hmc.edu/~hadas/}{\color{blue1}\underline{Prof. Ran Libeskind-Hadas}}} 
+{\fontspec[Color=blue1]{SF Hello Light}\href{https://www.cs.hmc.edu/~hadas/}{\color{blue1}Prof. Ran Libeskind-Hadas}} 
 to explore applications of 
-{\fontspec[Color=blue1]{SF Hello Light}\href{https://en.wikipedia.org/wiki/Kolmogorov_complexity}{\color{blue1}\underline{Kolmogorov complexity}}} 
+{\fontspec[Color=blue1]{SF Hello Light}\href{https://en.wikipedia.org/wiki/Kolmogorov_complexity}{\color{blue1}Kolmogorov complexity}} 
 to graph compression.
 \sectionsep 
 
 \subsection{Harvey Mudd Humanities}
 \descript{ Research Assistant}
 \location{2005 | Claremont, CA}
-\small Assisted {\fontspec[Color=blue1]{SF Hello Light}\href{https://www.hmc.edu/hsa/hsa-faculty/emeritus-faculty/richard-olson/}{\color{blue1}\underline{Prof. Richard Olson}}} in researching sources relating to discovery and use of algebra in China during the ancient and early imperial epochs.
+\small Assisted {\fontspec[Color=blue1]{SF Hello Light}\href{https://www.hmc.edu/hsa/hsa-faculty/emeritus-faculty/richard-olson/}{\color{blue1}Prof. Richard Olson}} in researching sources relating to discovery and use of algebra in China during the ancient and early imperial epochs.
 \sectionsep
 
 \end{minipage}
