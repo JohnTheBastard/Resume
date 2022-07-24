@@ -80,7 +80,7 @@ Last Updated on
 \fontspec{SF Hello Light}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
 
 % Descriptors command
-\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec{SF Hello Thin}\fontsize{10pt}{13pt}\selectfont {#1 \\} \normalfont}
+\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec{SF Hello Medium}\fontsize{10pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{\color{headings}\raggedright\scshape\fontspec{SF Hello Light}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
